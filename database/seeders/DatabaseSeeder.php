@@ -33,6 +33,6 @@ class DatabaseSeeder extends Seeder
             ]
         ]);
 
-        \App\Models\Uslug::factory(10)->create();
+        \App\Models\Uslug::factory(150)->create();
     }
 }

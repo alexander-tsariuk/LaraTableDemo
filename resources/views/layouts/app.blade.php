@@ -38,14 +38,13 @@
     @include('common.delete-confirm-popup')
     @stack('scripts')
     @livewireScripts
-
     @if (!empty($messages))
         <script>
-            //$(document).ready(function() {
+            $(document).ready(function() {
                 var data = {};
-                messages = JSON.parse('{!! json_encode($messages) !!}')
+                data.messages = JSON.parse('{!! json_encode($messages) !!}')
                 showMsgs(data);
-            //});
+            });
         </script>
     @endif
 </body>
