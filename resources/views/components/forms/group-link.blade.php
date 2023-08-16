@@ -1,0 +1,1 @@
+<a href="{{ $link }}" class="notajax" target="_blank"><span class="glyphicon glyphicon-edit"></span></a>

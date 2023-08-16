@@ -1,0 +1,1 @@
+<a href="{{ $link }}" class="btn btn-primary" title="{{ $title }}" data-toggle="tooltip" data-placement="bottom">{!! $icon !!}</a>

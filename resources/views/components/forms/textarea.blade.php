@@ -1,0 +1,1 @@
+<textarea {{ $attributes }} >{{ $attributes->get('value') }}</textarea>

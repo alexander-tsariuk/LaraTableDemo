@@ -1,0 +1,1 @@
+<button class="btn apply btn-success">{{ __('APP.SAVE') }}</button>
