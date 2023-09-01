@@ -34,5 +34,24 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Uslug::factory(150)->create();
+
+        \App\Models\Warehouse::insert([
+            [
+                'name' => 'Склад 1',
+                'is_main' => 0,
+            ],
+            [
+                'name' => 'Склад 2',
+                'is_main' => 0,
+            ],
+            [
+                'name' => 'Склад 3',
+                'is_main' => 0,
+            ],
+            [
+                'name' => 'Склад 4',
+                'is_main' => 1,
+            ],
+        ]);
     }
 }

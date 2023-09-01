@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UslugController;
 use App\Http\Controllers\UnitController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\WarehouseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('uslugs', UslugController::class);
     Route::resource('units', UnitController::class);
+
+    Route::resource('warehouses', WarehouseController::class);
+
     Route::get('products', [ProductController::class, 'index'])->name('products');
 });
 

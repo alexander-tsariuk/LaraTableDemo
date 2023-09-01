@@ -9,7 +9,7 @@ class BaseModel extends Model
     protected $title;
 
     protected $route;
-    
+
     protected $guarded = [];
 
     public function getRoute(): string
@@ -21,16 +21,17 @@ class BaseModel extends Model
     {
         return $this->columns;
     }
-    
+
     public function getTitle(): string
     {
         $title = $this->title ? __($this->title) : '';
+
         if (!empty($this->name)) {
             //$title .= ': ' . $this->name;
         }
         return $title;
     }
-    
+
     public function setTitle($title): string
     {
         $this->title = $title;

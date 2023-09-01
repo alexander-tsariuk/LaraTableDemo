@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Uslug;
 use Illuminate\Http\Request;
 
-class UslugController extends Controller
+class UslugController extends CrudController
 {
     public function __construct(Request $request)
     {

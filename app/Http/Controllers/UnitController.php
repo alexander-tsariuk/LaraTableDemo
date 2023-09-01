@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Unit;
 
-class UnitController extends Controller
+class UnitController extends CrudController
 {
     public function __construct(Request $request)
     {
@@ -13,7 +13,7 @@ class UnitController extends Controller
         $this->view = 'units';
         parent::__construct();
     }
-    
+
     public function index(Request $request)
     {
         $this->data = $this->model::orderBy('name', 'asc')->paginate(50);
